@@ -363,7 +363,7 @@ sub attach_listview
         current_page => $_ == $$page
     }} ($range_start..$range_end);
 
-    $t->param(page => $$page, pages => \@pages, search => Encode::encode_utf8($s->{search}));
+    $t->param(page => $$page, pages => \@pages, search => $s->{search});
 
     my @display_rows = ();
 
